@@ -9,7 +9,7 @@ function Maincontainer() {
         in 2024, All over India</h1>
         <p className='text-white mt-4'>corporis ad ipsa aliquid, eos asperiores debitis. Odit in vero quaerat dolorem quibusdam quidem repellat asperiores, consectetur odio impedit, iste aspernatur amet. </p>
       </div>
-      <button className=' bg-white absolute top-[68vh] rounded-md left-[37vw] flex items-center justify-center py-[18.988px] px-[40.975px] '>Become a Donor</button>
+      <button className='become-donor bg-[#FCFCFC] absolute top-[68vh]  left-[37vw] flex items-center justify-center py-[18.988px] px-[40.975px] '>Become a Donor</button>
     </div>
     
   )
