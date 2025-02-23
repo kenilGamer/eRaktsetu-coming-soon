@@ -5,7 +5,7 @@ import UesrFlow from './partials/UesrFlow'
 
 function App() {
   return (
-    <div className="w-full h-full bg-[#FCFCFC] container mx-auto">
+    <div className="w-full h-full bg-[#FCFCFC] md:container md:mx-auto">
       <Homepage/>
       <UesrFlow/>
       <AboutUs/>
