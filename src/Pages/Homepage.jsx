@@ -8,7 +8,7 @@ function Homepage() {
     <div className='w-full h-screen md:container  mx-auto p-5'>
       <div className='w-full  flex items-center justify-end'>
         <div className='text-2xl font-bold flex items-center gap-4'>
-          <img src="/imgs/facebook.svg" alt="" />
+          <img src="/imgs/facebook.svg" className='w-5' alt="" />
           <img src="/imgs/ig.svg" alt="" />
           <img src="/imgs/twitter.svg" alt="" />
           <img src="/imgs/linkedin.svg" alt="" />
@@ -23,4 +23,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default Homepage;

@@ -57,3 +57,8 @@ line-height: normal;
 letter-spacing: 4.734px;
 text-transform: uppercase;
 }
+
+.whatWeDo{
+  border-radius: 50px 50px 0px 0px;
+  flex-shrink: 0;
+}
