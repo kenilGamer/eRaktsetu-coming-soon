@@ -3,7 +3,9 @@ import React from 'react'
 function Maincontainer() {
   return (
     <div className='w-full h-[73vh] bg-gray-600 relative '>
+      <div className='w-full h-fit border-2 border-black overflow-hidden rounded-lg'>
       <img src="/imgs/maincontainer.png" className='w-full h-full object-cover   ' alt="" />
+      </div>
       <div className='md:w-[28vw] w-[80vw] h-[31vh] bg-red-500 absolute top-[42.6vh] md:right-0 max-md:left-[6vw] flex items-center  flex-col  maincontainer px-3 py-5'>
         <h1 className='md:text-xl text-[6vw] font-bold text-white md:-64  text-center '>We completed 2000+
         in 2024, All over India</h1>

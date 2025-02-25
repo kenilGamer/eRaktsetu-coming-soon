@@ -22,7 +22,7 @@ function WhyItMatters() {
         <div className="w-full flex flex-wrap items-center justify-center gap-x-32 gap-y-6 p-10">
           {data.map((item, index) => (
             <div key={index}>
-                <h1 className='md:text-[2.5vw] text-[5vw] font-["Anek Devanagari"] text-center'>{item.numebr2}</h1>
+                <h1 className='md:text-[2.5vw] text-[7vw] font-["Anek Devanagari"] text-center'>{item.numebr2}</h1>
                 <p className="text-center">{item.subtitle}</p>
             </div>
           ))}
