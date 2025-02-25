@@ -46,9 +46,9 @@ function OurWork() {
         </div>
     </div>
   ):(
-    <div className='w-full h-screen p-6 '>
+    <div className='w-full h-full p-6 mb-5'>
         <h1 className='text-[7.3vw] uppercase font-["Anek Devanagari"] text-center'>Our <span className='text-[#AB1419]'>Work</span></h1>
-        <hr className='border-2 border-[#ab1419] w-[35vw] rounded-full mx-auto mb-6' />
+        <hr className='border-2 border-[#ab1419] w-[35vw] rounded-full mx-auto ' />
         <div className='w-full h-fit flex items-center justify-center gap-4 '>
             <div className='h-fit  flex flex-col p-2 gap-3 items-center justify '>
                 <div className='w-[40vw] h-[60vw] bg-slate-400 rounded-xl'>

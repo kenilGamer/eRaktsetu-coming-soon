@@ -6,6 +6,8 @@ import Upcoming from './Pages/Upcoming'
 import WhatWeDo from './Pages/WhatWeDo'
 import OurWork from './Pages/OurWork'
 import WhyItMatters from './Pages/WhyItMatters'
+import FQA from './Pages/FQA'
+import Footer from './Pages/Footer'
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
       <div className="w-full  bg-[#FCFCFC] md: md:mx-auto">
         <OurWork/>
         <WhyItMatters/>
+        <FQA/>
       </div>
+      <Footer/>
     </>
   )
 }
