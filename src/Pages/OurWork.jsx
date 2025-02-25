@@ -14,7 +14,7 @@ function OurWork() {
         return () => window.removeEventListener("resize", handleResize);
       }, [handleResize]);
   return isMobile == false ? (
-    <div className='w-full h-screen  p-2'>
+    <div className='w-full h-screen  p-2 mb-32 mt-4'>
         <h1 className='text-[3.3vw] uppercase font-["Anek Devanagari"] text-center'>Our <span className='text-[#AB1419]'>Work</span></h1>
         <hr className='border-2 border-[#ab1419] w-[15vw] rounded-full mx-auto mb-6' />
         <div className='w-full h-full flex items-center justify-center gap-4'>
@@ -57,7 +57,7 @@ function OurWork() {
                 <div className='w-[40vw] h-[30vw] bg-slate-400 rounded-xl'>
 
                 </div>
-                
+                {/* <img src="/imgs/logo.png" width={180} alt="" /> */}
             </div>
            
             <div className=' h-fit flex flex-col gap-3'>

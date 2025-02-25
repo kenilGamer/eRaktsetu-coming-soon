@@ -58,7 +58,10 @@ function Upcoming() {
               </div>
             </div>
           ))}
-          <button className="flex items-center justify-center text-center px-8 py-2 bg-[#AB1419] text-white rounded-xl ">view All</button>
+        </div>
+        <div className="flex items-center justify-center mt-6">
+        <button className=" text-center px-8 py-2 bg-[#AB1419] text-white rounded-xl ">view All</button>
+
         </div>
       </div>
     </>
