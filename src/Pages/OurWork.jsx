@@ -57,7 +57,7 @@ function OurWork() {
                 <div className='w-[40vw] h-[30vw] bg-slate-400 rounded-xl'>
 
                 </div>
-                {/* <img src="/imgs/logo.png" width={180} alt="" /> */}
+                
             </div>
            
             <div className=' h-fit flex flex-col gap-3'>
