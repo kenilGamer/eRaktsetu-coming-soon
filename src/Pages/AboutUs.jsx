@@ -2,16 +2,16 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <div className="w-full  container mx-auto relative flex max-md:flex-col ">
+    <div className="w-full  container mx-auto relative flex max-md:flex-col mb-7 ">
       <div className="w-52 h-52 bg-[#AB1419] rounded-full redcircle absolute top-0 right-0"></div>
-      <div className="opimg md:w-1/2 w-full h-[50vh] bg-slate-500 overflow flex items-center justify-center  ">
+      <div className="opimg md:w-1/2 w-full h-[50vh] overflow flex items-center justify-center  ">
         <img
           src="/imgs/blood-research-bro 1.png"
-          className="object-cover scale-[1.3] "
+          className="object-cover md:scale-[1.3] "
           alt=""
         />
       </div>
-      <div className="md:w-1/2 w-full h-[50vh] flex items-center md:justify-center flex-col bg-slate-300">
+      <div className="md:w-1/2 w-full h-[50vh] flex items-center md:justify-center flex-col ">
         <h1 className='md:text-[4.6vw] text-[8vw] leading-tight about font-["Anek Devanagari"]  text-center font-bold'>
           About <span className="text-[#AB1419] font-semibold">Us</span>
         </h1>
