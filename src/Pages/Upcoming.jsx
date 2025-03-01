@@ -43,8 +43,8 @@ function Upcoming() {
               className=" flex items-center justify-center text-center gap-2 relative"
             >
               <img
-                src="/imgs/Group85.svg"
-                className="max-md:w-[100vw]"
+                src="/imgs/Group108.svg"
+                className="max-md:w-[100vw] upcomingimg"
                 alt=""
               />
               <div className="flex flex-col gap-2  absolute text-center mt-6 ">

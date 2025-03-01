@@ -14,11 +14,20 @@ function FQA() {
     {
       title: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.",
       content: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam."
+    },
+    {
+      title: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.",
+      content: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam."
+    },
+    {
+      title: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.",
+      content: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam. Qui Adipisci Dolor Accusamus Blanditiis Sint Voluptatem Corrupti Voluptas Aliquam."
     }
+
   ];
 
   return (
-    <div className='w-full h-screen p-  mx-auto'>
+    <div className='w-full min-h-full p-  mx-auto'>
       <div className='w-full flex items-center justify-center flex-col'>
         <h1 className='text-[7vw] md:text-[3.3vw] font-["Anek Devanagari"] text-center font-bold'>
           Frequently Asked <span className='text-[#AB1419]'>questions</span>

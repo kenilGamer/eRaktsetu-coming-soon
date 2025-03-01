@@ -13,7 +13,7 @@ const HowToJoinUs = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [handleResize]);
   return isMobile === false ? (
-    <div className="w-full h-screen px-10">
+    <div className="w-full min-h-full px-10 mb-32">
       <h1 className='text-[3.3vw] uppercase font-["Anek Devanagari"] text-center font-semibold'>
         How to <span className="text-[#AB1419]">Join US&nbsp;?</span>
       </h1>

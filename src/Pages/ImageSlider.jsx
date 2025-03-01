@@ -1,94 +1,72 @@
-import React, { useState, useEffect , useCallback} from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 const ImageSlider = () => {
-
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const handleResize = useCallback(() => {
     setIsMobile(window.innerWidth <= 768);
   }, []);
 
   useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, [handleResize]);
 
-  //   const [currentSlide, setCurrentSlide] = useState(0);
-  //   const totalSlides = 3;
-
-  // const slides = [
-  //   [
-  //     {
-  //       id: 1,
-  //       image: "https://source.unsplash.com/random/200x200?kid=1",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     },
-  //     {
-  //       id: 2,
-  //       image: "https://source.unsplash.com/random/200x200?kid=2",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     },
-  //     {
-  //       id: 3,
-  //       image: "https://source.unsplash.com/random/200x200?kid=3",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     }
-  //   ],
-  //   [
-  //     {
-  //       id: 4,
-  //       image: "https://source.unsplash.com/random/200x200?kid=4",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     },
-  //     {
-  //       id: 5,
-  //       image: "https://source.unsplash.com/random/200x200?kid=5",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     },
-  //     {
-  //       id: 6,
-  //       image: "https://source.unsplash.com/random/200x200?kid=6",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     }
-  //   ],
-  //   [
-  //     {
-  //       id: 7,
-  //       image: "https://source.unsplash.com/random/200x200?kid=7",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     },
-  //     {
-  //       id: 8,
-  //       image: "https://source.unsplash.com/random/200x200?kid=8",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     },
-  //     {
-  //       id: 9,
-  //       image: "https://source.unsplash.com/random/200x200?kid=9",
-  //       title: "Give Happiness",
-  //       text: "Lorem ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Qui Adipisci"
-  //     }
-  //   ]
-  // ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
+  const slides = [
+    {
+      id: 1,
+      image: "/public/imgs/maincontainer.png",
+      title: "Give Happiness",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      id: 2,
+      image: "/public/imgs/maincontainer.png",
+      title: "Stay Positive",
+      text: "Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit non."
+    },
+    {
+      id: 3,
+      image: "/public/imgs/maincontainer.png",
+      title: "Enjoy the Moment",
+      text: "Curabitur imperdiet est ac lectus tristique convallis."
+    },
+    {
+      id: 3,
+      image: "/public/imgs/maincontainer.png",
+      title: "Enjoy the Moment",
+      text: "Curabitur imperdiet est ac lectus tristique convallis."
+    },
+    {
+      id: 3,
+      image: "/public/imgs/maincontainer.png",
+      title: "Enjoy the Moment",
+      text: "Curabitur imperdiet est ac lectus tristique convallis."
+    },
+    {
+      id: 3,
+      image: "/public/imgs/maincontainer.png",
+      title: "Enjoy the Moment",
+      text: "Curabitur imperdiet est ac lectus tristique convallis."
+    }, {
+      id: 3,
+      image: "/public/imgs/maincontainer.png",
+      title: "Enjoy the Moment",
+      text: "Curabitur imperdiet est ac lectus tristique convallis."
+    },
+    {
+      id: 3,
+      image: "/public/imgs/maincontainer.png",
+      title: "Enjoy the Moment",
+      text: "Curabitur imperdiet est ac lectus tristique convallis."
+    },
+  ];
 
   const PhotoCard = ({ image, title, text }) => (
     <div className="text-center">
@@ -98,55 +76,36 @@ const ImageSlider = () => {
           ❤
         </div>
       </div>
-      <h3 className="text-xl mb-2.5">{title}</h3>
+      <h3 className="text-xl font-bold mb-2.5">{title}</h3>
       <p className="text-sm opacity-80">{text}</p>
     </div>
   );
 
-  return isMobile == false ? (
-    <div className="bg-[#AB1419] min-h-screen sm:h-[30vh] flex flex-col items-center py-12 px-5 text-white">
-      <h1 className="w-[80vw] text-center text-[3vw] font-Poppins fw-600">
+  return (
+    <div className="bg-[#AB1419] h-screen flex flex-col items-center  justify-center p-10 text-white">
+      <h1 className="w-[80vw] text-center text-[3vw] font-semibold">
         Corporis Ad Ipsa Aliquid, Eos Asperiores Debitis. Odit In Vero Quaerat Dolorem
       </h1>
 
-      <div className="w-[30vw] h-[2px] bg-[#FCFCFC] my-10"></div>
+      <hr className="w-[30vw] h-[2px] bg-[#FCFCFC] my-10"/>
 
-      <div className="w-full max-w-[1200px] overflow-hidden relative">
-        <div 
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-        >
-          {slides.map((slide, slideIndex) => (
-            <div key={slideIndex} className="min-w-full grid grid-cols-3 gap-7 px-5">
-              {slide.map((item) => (
-                <PhotoCard key={item.id} {...item} />
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="flex justify-center mt-7 gap-2.5">
-        {[...Array(totalSlides)].map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              currentSlide === index ? 'bg-white' : 'bg-white/30'
-            }`}
-          />
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        spaceBetween={20}
+        slidesPerView={isMobile ? 1 : 3}
+        autoplay={{ delay: 3000 }}
+        navigation
+        pagination={{ clickable: true }}
+        loop={true}
+        className="w-full max-w-[1200px]  "
+      >
+        {slides.map((item) => (
+          <SwiperSlide key={item.id} className="flex justify-center">
+            <PhotoCard {...item} />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
-  ):(
-    <div className="bg-[#AB1419] h-[50vh] sm:h-[30vh] flex flex-col items-center py-12 px-5 text-white">
-    <h1 className="w-[80vw] text-center text-[3vw] font-Poppins fw-600">
-      Corporis Ad Ipsa Aliquid, Eos Asperiores Debitis. Odit In Vero Quaerat Dolorem
-    </h1>
-
-    <div className="w-[30vw] h-[2px] bg-[#FCFCFC] my-10"></div>
-
-  </div>
   );
 };
 
