@@ -8,7 +8,7 @@ const Faqdropdown = ({ title, content }) => {
     <div className="w-full md:container mx-auto">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex justify-between items-center w-full p-4 bg-red-700 text-white font-semibold rounded-lg focus:outline-none"
+        className="flex justify-between items-center  w-full p-4 bg-red-700  text-white font-semibold rounded-lg focus:outline-none"
       >
         {title}
         {isOpen ? <FaChevronUp /> : <FaChevronDown />}

@@ -20,11 +20,11 @@ function FQA() {
   return (
     <div className='w-full h-screen p-  mx-auto'>
       <div className='w-full flex items-center justify-center flex-col'>
-        <h1 className='text-[3.3vw] font-["Anek Devanagari"] text-center font-bold'>
+        <h1 className='text-[7vw] md:text-[3.3vw] font-["Anek Devanagari"] text-center font-bold'>
           Frequently Asked <span className='text-[#AB1419]'>questions</span>
         </h1>
-        <hr className='border-2 border-[#ab1419] w-[34vw] rounded-full mx-auto mb-4' />
-        <p className='md:text-[1.3vw] text-[3.5vw] md:w-2/4 font-["Anek Devanagari"] p-2 text-center'>
+        <hr className='border-2 border-[#ab1419] w-[60vw] md:w-[34vw] rounded-full mx-auto mb-4' />
+        <p className='md:text-[1.3vw] text-[3.9vw] md:w-2/4 font-["Anek Devanagari"] p-2 text-center'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui adipisci dolor accusamus blanditiis sint voluptatem corrupti voluptas aliquam
         </p>
       </div>
