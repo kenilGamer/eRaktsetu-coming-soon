@@ -50,7 +50,7 @@ function Footer() {
     <footer>
       <div className="flex flex-col md:flex-row gap-10 px-5 md:px-0 justify-center items-center my-16">
         <div className="w-full md:w-[40%] items-center md:items-start flex flex-col gap-2">
-          <img src="/imgs/rounded-logo.png" alt="" width={100} />
+          <img src="/imgs/rounded-logo.png" alt="" width={150} />
           <h2 className="text-black text-3xl font-bold text-center md:text-start">
             Join us today and <br className="hidden md:block" /> Make an impact
             to the World.
