@@ -9,6 +9,7 @@ import WhyItMatters from './Pages/WhyItMatters'
 import FQA from './Pages/FQA'
 import Footer from './Pages/Footer'
 import HowToJoinUs from './Pages/HowToJoinUs'
+import ImageSlider from './Pages/ImageSlider';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       </div>
       <div className="w-full mt-20 bg-[#FCFCFC] md:mx-auto">
         <HowToJoinUs />
+        <ImageSlider />
       </div>
       <Footer/>
     </>
