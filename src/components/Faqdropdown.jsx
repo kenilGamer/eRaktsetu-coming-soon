@@ -18,9 +18,9 @@ const Faqdropdown = ({ title, content }) => {
   );
 };
 
-const FaqList = ({ data }) => {
+const FaqList = ({ key, data }) => {
   return (
-    <div className="w-full md:container mx-auto space-y-4 p-4">
+    <div key={key} className="w-full md:container mx-auto space-y-4 p-4">
       {data.map((item, index) => (
         <Faqdropdown key={index} title={item.title} content={item.content} />
       ))}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [isMobile, setIsMobile] = useState(false);
@@ -25,18 +26,18 @@ function Nav() {
       {/* Desktop Menu */}
       {!isMobile ? (
         <div className="flex items-center gap-4 mt-1">
-          <a href="#" className="text-[#777777]">
+          <Link to="/"  className="text-[#777777]">
             Home
-          </a>
-          <a href="#" className="text-[#777777]">
+          </Link>
+          <Link to="/about"  className="text-[#777777]">
             About Us
-          </a>
-          <a href="#" className="text-[#777777]">
+          </Link>
+          <Link to="#"  className="text-[#777777]">
             Features
-          </a>
-          <a href="#" className="text-[#777777]">
+          </Link>
+          <Link to="#"  className="text-[#777777]">
             FAQ's
-          </a>
+          </Link>
         </div>
       ) : (
         <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl">
@@ -56,18 +57,18 @@ function Nav() {
           <img src="/imgs/logo.png" width={200} alt="" />
 
           <button className="rounded-xl bg-[#AB1419] text-white px-5 py-2">Join Us</button>
-          <a href="#" className="text-[#777777] text-2xl">
+          <Link to="#"  className="text-[#777777] text-2xl">
             Home
-          </a>
-          <a href="#" className="text-[#777777] text-2xl">
+          </Link>
+          <Link to="/about"  className="text-[#777777] text-2xl">
             About Us
-          </a>
-          <a href="#" className="text-[#777777] text-2xl">
+          </Link>
+          <Link to="#"  className="text-[#777777] text-2xl">
             Features
-          </a>
-          <a href="#" className="text-[#777777] text-2xl">
+          </Link>
+          <Link to="#"  className="text-[#777777] text-2xl">
             FAQ's
-          </a>
+          </Link>
           <div className="w-full  flex items-center justify-center">
             <div className="text-2xl font-bold flex items-center gap-4">
               <img src="/imgs/facebook.svg" className="w-5" alt="" />

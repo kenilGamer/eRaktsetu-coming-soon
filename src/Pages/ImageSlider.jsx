@@ -38,30 +38,30 @@ const ImageSlider = () => {
       text: "Curabitur imperdiet est ac lectus tristique convallis."
     },
     {
-      id: 3,
+      id: 4,
       image: "/public/imgs/maincontainer.png",
       title: "Enjoy the Moment",
       text: "Curabitur imperdiet est ac lectus tristique convallis."
     },
     {
-      id: 3,
+      id: 5,
       image: "/public/imgs/maincontainer.png",
       title: "Enjoy the Moment",
       text: "Curabitur imperdiet est ac lectus tristique convallis."
     },
     {
-      id: 3,
+      id: 6,
       image: "/public/imgs/maincontainer.png",
       title: "Enjoy the Moment",
       text: "Curabitur imperdiet est ac lectus tristique convallis."
     }, {
-      id: 3,
+      id: 7,
       image: "/public/imgs/maincontainer.png",
       title: "Enjoy the Moment",
       text: "Curabitur imperdiet est ac lectus tristique convallis."
     },
     {
-      id: 3,
+      id: 8,
       image: "/public/imgs/maincontainer.png",
       title: "Enjoy the Moment",
       text: "Curabitur imperdiet est ac lectus tristique convallis."

@@ -6,8 +6,8 @@ function AboutUs() {
       <div className="w-52 h-52 bg-[#AB1419] rounded-full redcircle absolute top-0 right-0"></div>
       <div className="opimg md:w-1/2 w-full h-[50vh] overflow flex items-center justify-center  ">
         <img
-          src="/imgs/blood-research-bro 1.png"
-          className="object-cover md:scale-[1.3] "
+          src="/imgs/ab.svg"
+          className="object-cover scale-[1.5] md:scale-[2.3] "
           alt=""
         />
       </div>

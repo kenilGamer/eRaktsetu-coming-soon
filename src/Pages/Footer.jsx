@@ -10,18 +10,39 @@ function Footer() {
     },
     {
       link: "#",
-      text: "Privacy Policy",
+      text: "Features",
     },
     {
       link: "#",
-      text: "Cookies",
+      text: "Feedback",
     },
     {
       link: "#",
       text: "Privacy Policy",
     },
   ];
-
+  const footerArray1 = [
+    {
+      link: "#",
+      text: "Team Members",
+    },
+    {
+      link: "#",
+      text: "Total Donors",
+    },
+    {
+      link: "#",
+      text: "total Recipients",
+    },
+    {
+      link: "#",
+      text: " Mobile App ",
+    },
+    {
+      link: "#",
+      text: "donors data",
+    },
+  ];
   const footerArrayButton = [
     {
       link: "#",
@@ -39,11 +60,11 @@ function Footer() {
     },
     {
       link: "#",
-      text: "Cookies",
+      text: "",
     },
     {
       link: "#",
-      text: "Privacy Policy",
+      text: "",
     },
   ];
   return (
@@ -58,7 +79,7 @@ function Footer() {
         </div>
         <div className="w-full md:w-[45%] flex justify-center gap-10">
           <ul className="flex flex-col gap-2">
-            {footerArray.map((footer, index) => (
+            {footerArray1.map((footer, index) => (
               <li key={index}>
                 <a href={footer.link}>{footer.text}</a>
               </li>
@@ -94,6 +115,7 @@ function Footer() {
           &copy; 2025 <span className="font-bold">eRaktSetu</span> All rights
           reserved.
         </p>
+        <p>Powered by <span className="font-bold">eRaktSetu Team</span></p>
       </div>
     </footer>
   );
